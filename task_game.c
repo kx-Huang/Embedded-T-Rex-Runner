@@ -124,7 +124,6 @@ void Task_Game(void *pvParameters)
         }
         cactus_x = (uint16_t)cactus_x <= CACTUS_X_MIN ? CACTUS_X_MAX + random:
                                                         cactus_x - speed_cactus;
-
     }
 }
 
