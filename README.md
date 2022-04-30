@@ -1,6 +1,8 @@
 # Embedded-T-Rex-Runner
 Google Chrome's Dinosaur T-rex Runner Game but an Embedded Version
 
+![Demo](img/demo.jpg)
+
 ## Project Description
 This project is a course project in CS/ECE353 Microprocessor Systems at University of Wisconsin-Madison.
 
