@@ -21,7 +21,15 @@ Basic Google Chrome's dinosaur T-rex runner game rules with following addional f
 
 ## Software
 - Programming Language: `C`
+- IDE: `Code Composer Studio`
 - Operating system transplant: `FreeRTOS`
+  - Download `FreeRTOS` source code from [official website](https://www.freertos.org/a00104.html)
+  - Version: `FreeRTOS 202112.00`
+  - include path:
+    - ${PROJECT_LOC}/FreeRTOS/Source/include
+    - ${PROJECT_LOC}/FreeRTOS/Source/portable/CCS/ARM_CM4F
+
+## Implementation Details
 - Random cactus generation: Hardware noise converted by `ADC14` during periodic interrupts
 - LCD update: handled with message queue `Queue_LCD`
   1. Future frame buffers are calculated in advanced and enqueued from `Task_Game`
