@@ -4,7 +4,7 @@ Google Chrome's Dinosaur T-rex Runner Game but an Embedded Version
 ![Demo](img/demo.jpg)
 
 ## Project Description
-This project is a course project in *CS/ECE353 Microprocessor Systems* [@University of Wisconsin-Madison](https://www.wisc.edu){:target="\_blank"}. In general, we implement an embedded version of Google Chrome's T-rex Runner with more interesting features using `FreeRTOS`.
+This project is a course project in *CS/ECE353 Microprocessor Systems* [@University of Wisconsin-Madison](https://www.wisc.edu). In general, we implement an embedded version of Google Chrome's T-rex Runner with more interesting features using `FreeRTOS`.
 
 ## Game Rules
 Basic Google Chrome's dinosaur T-rex runner game rules with following addional features:
