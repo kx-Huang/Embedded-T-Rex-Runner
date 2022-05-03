@@ -1,7 +1,7 @@
 # Embedded-T-Rex-Runner ![](https://visitor-badge.glitch.me/badge?page_id=kx-Huang.Embedded-T-Rex-Runner&left_color=gray&right_color=blue)
 Google Chrome's Dinosaur T-rex Runner Game but an Embedded Version
 
-![Demo](img/demo.jpg)
+![Demo](img/demo.png)
 
 ## Project Description
 This project is a course project in *CS/ECE353 Microprocessor Systems* [@University of Wisconsin-Madison](https://www.wisc.edu). In general, we implement an embedded version of Google Chrome's T-rex Runner with some more interesting features using `FreeRTOS`.
