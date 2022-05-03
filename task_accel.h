@@ -1,10 +1,3 @@
-/*
- * task_accel.h
- *
- *  Created on: Apr 29, 2022
- *      Author: Alex North, Kexuan Huang
- */
-
 #ifndef TASK_ACCEL_H_
 #define TASK_ACCEL_H_
 
@@ -36,7 +29,7 @@ extern TaskHandle_t Task_Accel_Timer_Handle;
 
 extern volatile tilt_t accel_data;
 
-// private functions (only called in task_joystick.c)
+// Private functions (only called in task_joystick.c)
 void _accel_init();
 
 // Task Joystick

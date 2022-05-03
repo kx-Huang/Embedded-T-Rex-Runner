@@ -1,10 +1,3 @@
-/*
- * task_accel.c
- *
- *  Created on: Apr 29, 2022
- *      Author: Alex North, Kexuan Huang
- */
-
 #include <task_accel.h>
 
 TaskHandle_t Task_Accel_Handle = NULL;
@@ -97,7 +90,7 @@ void Accel_init()
         "Task Accelerometer Timer",
         configMINIMAL_STACK_SIZE,
         NULL,
-        3,
+        4,
         &Task_Accel_Timer_Handle
     );
 

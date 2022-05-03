@@ -1,10 +1,3 @@
-/*
- * task_joystick.c
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang
- */
-
 #include <task_joystick.h>
 
 TaskHandle_t Task_Joystick_Handle = NULL;

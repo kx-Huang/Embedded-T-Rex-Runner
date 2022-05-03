@@ -1,10 +1,3 @@
-/*
- * task_button.c
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang
- */
-
 #include <task_button.h>
 
 TaskHandle_t Task_Button_Handle = NULL;
@@ -39,7 +32,7 @@ bool _MKII_S2_debounce(void)
     }
 
     // If the de-bounce variable is equal to 0x7F, return true
-    if (debounce_state == 0x7F)
+    if (debounce_state == 0x0F)
     {
         return true;
     }
@@ -75,7 +68,7 @@ void Button_init()
         "Detect MKII Button 2 Status",
         configMINIMAL_STACK_SIZE,
         NULL,
-        3,
+        4,
         &Task_Button_Handle
     );
 }

@@ -1,10 +1,3 @@
-/*
- * task_button.h
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang
- */
-
 #ifndef TASK_BUTTON_H_
 #define TASK_BUTTON_H_
 

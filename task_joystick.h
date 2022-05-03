@@ -1,10 +1,3 @@
-/*
- * task_joystickj.h
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang
- */
-
 #ifndef TASK_JOYSTICK_H_
 #define TASK_JOYSTICK_H_
 

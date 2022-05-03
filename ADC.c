@@ -1,10 +1,3 @@
-/*
- * ADC.c
- *
- *  Created on: Apr 29, 2022
- *      Author: Kexuan Huang
- */
-
 #include <task_accel.h>
 #include <task_joystick.h>
 

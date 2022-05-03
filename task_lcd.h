@@ -1,10 +1,3 @@
-/*
- * task_lcd.h
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang
- */
-
 #ifndef TASK_LCD_H_
 #define TASK_LCD_H_
 

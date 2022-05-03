@@ -1,15 +1,3 @@
-/*
- * image.c
- *
- *      Author: Alex North, Kexuan Huang
- *      Saving tool here so I don't have to spend another 2 hours on this:
- *      https://manytools.org/hacker-tools/image-to-byte-array/go/
- */
-
-/*
- **  Image data for dinosaur and cactus
- */
-
 #include "image.h"
 
 const uint8_t dinoBitmaps[] =

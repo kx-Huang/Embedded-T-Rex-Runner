@@ -1,10 +1,3 @@
-/*
- * ADC.h
- *
- *  Created on: Apr 29, 2022
- *      Author: Kexuan Huang
- */
-
 #ifndef ADC_H_
 #define ADC_H_
 

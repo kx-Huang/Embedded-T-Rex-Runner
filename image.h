@@ -1,10 +1,3 @@
-/*
- * image.h
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang
- */
-
 #ifndef IMAGE_H_
 #define IMAGE_H_
 

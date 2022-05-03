@@ -1,10 +1,3 @@
-/*
- * task_lcd.c
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang
- */
-
 #include "task_lcd.h"
 
 TaskHandle_t Task_LCD_Handle = NULL;

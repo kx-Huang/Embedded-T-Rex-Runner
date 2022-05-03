@@ -1,10 +1,4 @@
 /*
- * main.c
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang
- */
-/*
  * Copyright (c) 2016-2019, Texas Instruments Incorporated
  * All rights reserved.
  *
@@ -52,7 +46,9 @@ int main(void)
     // initialize peripherals
     Joystick_init();
     Button_init();
+    Buzzer_init();
     Accel_init();
+    Light_init();
     LCD_init();
     Game_init();
 
