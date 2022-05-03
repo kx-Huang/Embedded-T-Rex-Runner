@@ -30,7 +30,7 @@ Basic Google Chrome's dinosaur T-rex runner game rules with following addional f
 - Programming Language: `C`
 - IDE: `Code Composer Studio`
 - Operating system transplant: `FreeRTOS`
-  - Download `FreeRTOS` source code from [official website](https://www.freertos.org/a00104.html)
+  - Download source code from [FreeRTOS official website](https://www.freertos.org/a00104.html)
   - Version: `FreeRTOS 202112.00`
   - include path:
     - ${PROJECT_LOC}/FreeRTOS/Source/include
