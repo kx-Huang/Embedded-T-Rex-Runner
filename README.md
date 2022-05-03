@@ -1,4 +1,4 @@
-# Embedded-T-Rex-Runner
+# Embedded-T-Rex-Runner ![](https://visitor-badge.glitch.me/badge?page_id=kx-Huang.Embedded-T-Rex-Runner&left_color=gray&right_color=blue)
 Google Chrome's Dinosaur T-rex Runner Game but an Embedded Version
 
 ![Demo](img/demo.jpg)
