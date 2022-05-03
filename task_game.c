@@ -1,10 +1,3 @@
-/*
- * task_game.c
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang, Alex North
- */
-
 #include "task_game.h"
 
 TaskHandle_t Task_Game_Handle = NULL;
@@ -42,10 +35,27 @@ void Task_Game(void *pvParameters)
         }
 
         // button pressed, jump
-        if (!jumping && button_pressed)
+        if (!jumping && (button_pressed | light_intensity == LIGHT_LOW))
         {
             jumping = true;
             jumping_frame = 1;
+
+            // buzzer play sound according to speed
+            if (accel_data == TILT_LEFT)
+            {
+                turn_Buzzer_On(BUTTON_SOUND_PITCH_LOW);
+            }
+            else if (accel_data == FLAT)
+            {
+                turn_Buzzer_On(BUTTON_SOUND_PITCH_MID);
+            }
+            else if (accel_data == TILT_RIGHT)
+            {
+                turn_Buzzer_On(BUTTON_SOUND_PITCH_HIGH);
+            }
+            T32_1_wait_period(BUTTON_SOUND_DURATION);
+            turn_Buzzer_Off();
+
         }
 
         // if jumping, update dinosaur y position
@@ -106,8 +116,17 @@ void Task_Game(void *pvParameters)
             xQueueSendToBack(Queue_LCD, &nextFrame, portMAX_DELAY);
         }
 
-        // delay for 10mS using vTaskDelay
-        vTaskDelay(pdMS_TO_TICKS(20));
+        // Simple collision detection
+        if (((cactus_x - dino_x >= 0 && cactus_x - dino_x <= CACTUS_DINO_LIMIT_X) ||
+             (dino_x - cactus_x >= 0 && dino_x - cactus_x <= DINO_CACTUS_LIMIT_X)) &&
+             (cactus_y - dino_y <= DINO_CACTUS_LIMIT_Y))
+        {
+            _LED_switch(true, false, false); // turn on red LED indicating collision
+        }
+        else if (light_intensity != LIGHT_LOW)
+        {
+            _LED_switch(false, false, false); // turn off
+        }
 
         // Update position of cactus
         if (accel_data == TILT_LEFT)
@@ -124,6 +143,9 @@ void Task_Game(void *pvParameters)
         }
         cactus_x = (uint16_t)cactus_x <= CACTUS_X_MIN ? CACTUS_X_MAX + random:
                                                         cactus_x - speed_cactus;
+
+        // delay for 10mS using vTaskDelay
+        vTaskDelay(pdMS_TO_TICKS(20));
     }
 }
 

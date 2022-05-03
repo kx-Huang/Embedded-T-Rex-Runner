@@ -1,10 +1,3 @@
-/*
- * task_game.h
- *
- *  Created on: Apr 27, 2022
- *      Author: Kexuan Huang, Alex North
- */
-
 #ifndef TASK_GAME_H_
 #define TASK_GAME_H_
 
@@ -28,7 +21,9 @@
 #include <task_joystick.h>
 #include <task_button.h>
 #include <task_accel.h>
+#include <task_light.h>
 #include <task_lcd.h>
+#include <buzzer.h>
 #include <image.h>
 
 // get random number from hardware noise
@@ -42,6 +37,11 @@
 #define CACTUS_X_MAX 120
 #define CACTUS_X_MIN 0
 #define CACTUS_Y 108
+
+// collision detection
+#define CACTUS_DINO_LIMIT_X 25
+#define DINO_CACTUS_LIMIT_X 30
+#define DINO_CACTUS_LIMIT_Y 10
 
 extern TaskHandle_t Task_Game_Handle;
 
